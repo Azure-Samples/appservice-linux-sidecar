@@ -9,13 +9,6 @@
         "description": "Web app name."
       }
     },
-    "location": {
-      "type": "string",
-      "defaultValue": "West Central US",
-      "metadata": {
-        "description": "Location for all resources."
-      }
-    },
     "sku": {
       "type": "string",
       "defaultValue": "P0V3",
@@ -32,7 +25,7 @@
       "type": "Microsoft.Web/serverfarms",
       "apiVersion": "2021-02-01",
       "name": "[variables('appServicePlanName')]",
-      "location": "[parameters('location')]",
+      "location": "[resourceGroup().location]",
       "sku": {
         "name": "[parameters('sku')]"
       },
