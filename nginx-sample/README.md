@@ -4,7 +4,7 @@ This repository contains sample sitecontainers app
 You can either deploy just by clicking the button
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fappservice-linux-sidecar%2Fmain%2Fnginx-sample%2Farmtemplatemultictr.json" target="_blank">
-<img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/deploybutton.png"/>
+<img src="https://aka.ms/deploytoazurebutton"/>
 </a>
 
 
