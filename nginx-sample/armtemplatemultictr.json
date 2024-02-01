@@ -38,7 +38,7 @@
       "type": "Microsoft.Web/sites",
       "apiVersion": "2021-02-01",
       "name": "[parameters('webAppName')]",
-      "location": "[parameters('location')]",
+      "location": "[resourceGroup().location]",
       "properties": {
         "httpsOnly": true,
         "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanName'))]",
