@@ -62,7 +62,8 @@
       "properties": {
         "image": "sitecontainerssampleacr.azurecr.io/sample/nginx:1.0",
         "targetPort": "80",
-        "isMain": true
+        "isMain": true,
+        "authType": "Anonymous"
       },
       "dependsOn": [
         "[resourceId('Microsoft.Web/sites', parameters('webAppName'))]"
@@ -75,7 +76,8 @@
       "properties": {
         "image": "sitecontainerssampleacr.azurecr.io/sample/dotnetcore:1.0",
         "targetPort": "2000",
-        "isMain": false
+        "isMain": false,
+        "authType": "Anonymous"
       },
       "dependsOn": [
         "[resourceId('Microsoft.Web/sites', parameters('webAppName'))]"
@@ -88,7 +90,8 @@
       "properties": {
         "image": "sitecontainerssampleacr.azurecr.io/sample/python:1.0",
         "targetPort": "3000",
-        "isMain": false
+        "isMain": false,
+        "authType": "Anonymous"
       },
       "dependsOn": [
         "[resourceId('Microsoft.Web/sites', parameters('webAppName'))]"
@@ -101,7 +104,8 @@
       "properties": {
         "image": "sitecontainerssampleacr.azurecr.io/sample/node:1.0",
         "targetPort": "4000",
-        "isMain": false
+        "isMain": false,
+        "authType": "Anonymous"
       },
       "dependsOn": [
         "[resourceId('Microsoft.Web/sites', parameters('webAppName'))]"
