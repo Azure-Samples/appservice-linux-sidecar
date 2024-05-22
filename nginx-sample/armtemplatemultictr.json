@@ -60,7 +60,7 @@
       "apiVersion": "2021-02-01",
       "name": "[format('{0}/{1}', parameters('webAppName'), 'maincontainer')]",
       "properties": {
-        "image": "sitecontainerssampleacr.azurecr.io/sample/nginx:1.0",
+        "image": "mcr.microsoft.com/appsvc/docs/sidecars/sample-nginx:latest",
         "targetPort": "80",
         "isMain": true,
         "authType": "Anonymous"
@@ -74,7 +74,7 @@
       "apiVersion": "2021-02-01",
       "name": "[format('{0}/{1}', parameters('webAppName'), 'sidecardotnetcore')]",
       "properties": {
-        "image": "sitecontainerssampleacr.azurecr.io/sample/dotnetcore:1.0",
+        "image": "mcr.microsoft.com/appsvc/docs/sidecars/sample-dotnetcore:latest",
         "targetPort": "2000",
         "isMain": false,
         "authType": "Anonymous"
@@ -88,7 +88,7 @@
       "apiVersion": "2021-02-01",
       "name": "[format('{0}/{1}', parameters('webAppName'), 'sidecarpython')]",
       "properties": {
-        "image": "sitecontainerssampleacr.azurecr.io/sample/python:1.0",
+        "image": "mcr.microsoft.com/appsvc/docs/sidecars/sample-python:latest",
         "targetPort": "3000",
         "isMain": false,
         "authType": "Anonymous"
@@ -102,7 +102,7 @@
       "apiVersion": "2021-02-01",
       "name": "[format('{0}/{1}', parameters('webAppName'), 'sidecarnode')]",
       "properties": {
-        "image": "sitecontainerssampleacr.azurecr.io/sample/node:1.0",
+        "image": "mcr.microsoft.com/appsvc/docs/sidecars/sample-nodejs:latest",
         "targetPort": "4000",
         "isMain": false,
         "authType": "Anonymous"
